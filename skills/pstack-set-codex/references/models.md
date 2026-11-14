@@ -28,7 +28,7 @@ Codex cloud runs when the request names Codex cloud. Use `codex cloud exec --env
 
 ## Role lines
 
-Copy these lines into `~/.cursor/rules/pstack-codex.mdc`.
+These lines apply when mode is codex. Do not copy them into an always-applied Cursor rule.
 
 ```
 swarm workers: cursor-cloud grok-4.7-xhigh-fast

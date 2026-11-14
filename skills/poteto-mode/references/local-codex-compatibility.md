@@ -1,10 +1,10 @@
 # Local Codex compatibility
 
-This installation preserves Cursor pstack workflows with a Codex adapter. This file and each Codex execution block take precedence over conflicting Cursor instructions below them. Cursor follows the upstream sections unchanged.
+This file applies only when [mode](../../pstack-set-mode/references/modes.md) is codex. A Cursor process, including a Cursor cloud agent, does not read it. This installation preserves Cursor pstack workflows with a Codex adapter. This file and each Codex execution block take precedence over conflicting Cursor instructions below them when mode is codex. Cursor follows the upstream sections unchanged.
 
 ## Choose execution before delegation
 
-Read [swarm](../../swarm/SKILL.md) before fan-out. `$swarm-sub` uses native Codex collaboration tools in the current execution environment. `$swarm-cloud` submits independent Codex Cloud tasks through `codex cloud exec`. `$swarm` defaults to subagents unless the user or saved plan explicitly selects cloud. Announce the backend. A blocked backend stays blocked; never silently switch it.
+Read [swarm](../../swarm/SKILL.md) before fan-out. `$swarm-sub` uses native Codex collaboration tools in the current execution environment. `$swarm-cloud` submits independent Codex Cloud tasks through `codex cloud exec`. In Cursor mode that same name is a Cursor cloud agent, and this file does not apply. `$swarm` defaults to subagents unless the user or saved plan explicitly selects cloud. Announce the backend. A blocked backend stays blocked; never silently switch it.
 
 A native subagent is not an independent cloud machine. Cloud tasks have separate workspaces and cannot read local absolute paths, unpushed work, local transcripts, or the parent's secrets and tools by implication. Follow the [worker contract](../../swarm/references/worker-contract.md) and [cloud transport](../../swarm/references/codex-cloud.md). Read the named leaf skill from the installed sibling directory. `/name` in Cursor prose means `$name` or an explicit Codex request, not a shell command.
 

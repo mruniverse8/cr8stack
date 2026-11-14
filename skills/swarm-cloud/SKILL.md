@@ -1,11 +1,19 @@
 ---
 name: swarm-cloud
-description: Run independent Codex Cloud tasks from a saved plan, retrieve their patches and reports, and recover dependency coordination across sessions.
+description: Run independent cloud workers from a saved plan. On Cursor, including a Cursor cloud agent, those workers are Cursor cloud agents. On Codex, they are Codex Cloud tasks.
 ---
 
 # Swarm cloud
 
-Use Codex Cloud task workspaces, not native collaboration threads. The coordinator remains in its current session. Submitted tasks may continue when that session stops; dependency scheduling resumes only when a coordinator runs again. Read the [worker contract](../swarm/references/worker-contract.md), [Cloud transport](../swarm/references/codex-cloud.md), and [run registry](../swarm/references/run-state.md).
+Read [modes](../pstack-set-mode/references/modes.md) before the steps below.
+
+## Cursor cloud
+
+When this process is Cursor, including a Cursor cloud agent, stop after this section. `$swarm-cloud` spawns Cursor cloud agents. Use [swarm](../swarm/SKILL.md) from Start, with `environment: "cloud"` on every worker. Use `machine.type: new_cloud_vm` when a worker needs its own VM and branch. Report each worker as `https://cursor.com/agents/<bcId>`. Do not look for the `codex` binary and do not switch away because it is missing.
+
+## Codex cloud
+
+When this process is Codex, use Codex Cloud task workspaces, not native collaboration threads. The coordinator remains in its current session. Submitted tasks may continue when that session stops; dependency scheduling resumes only when a coordinator runs again. Read the [worker contract](../swarm/references/worker-contract.md), [Cloud transport](../swarm/references/codex-cloud.md), and [run registry](../swarm/references/run-state.md).
 
 ## Frame
 

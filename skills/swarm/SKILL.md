@@ -4,12 +4,15 @@ description: "Fan out N parallel workers, drain them, and return one report. Use
 disable-model-invocation: true
 ---
 
-> **Codex:** Read [the local runtime adapter](../poteto-mode/references/local-codex-compatibility.md), then use the Codex workflow below. **Cursor:** skip the Codex workflow and use the original workflow under Start.
+> **Cursor:** Read [modes](../pstack-set-mode/references/modes.md). This process is cursor mode, including a Cursor cloud agent. Skip the Codex section and use Start. `$swarm-cloud` is Start with `environment: "cloud"`.
+> **Codex:** Read [the local runtime adapter](../poteto-mode/references/local-codex-compatibility.md), then use the Codex workflow below.
 
 
 # Swarm
 
 ## Codex execution routing
+
+This section applies only in Codex mode. In Cursor mode, `$swarm-cloud` is not Codex Cloud.
 
 Choose a backend before delegating. `$swarm-sub` or an explicit subagent request uses [swarm-sub](../swarm-sub/SKILL.md). `$swarm-cloud` or an explicit Codex Cloud request uses [swarm-cloud](../swarm-cloud/SKILL.md). An unspecified `$swarm` keeps the native subagent default. A plan may select different backends for separate work items; name the backend in the assignment table. Never silently switch after a backend fails.
 

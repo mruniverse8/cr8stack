@@ -16,7 +16,7 @@ For Codex, use the [local adapter](../poteto-mode/references/local-codex-compati
 | Need | Codex route |
 | --- | --- |
 | Parallel workers in the current execution environment | [$swarm-sub](../swarm-sub/SKILL.md) |
-| Independent remote tasks in isolated Cloud workspaces | [$swarm-cloud](../swarm-cloud/SKILL.md) |
+| Independent remote tasks in isolated Codex Cloud workspaces | [$swarm-cloud](../swarm-cloud/SKILL.md) |
 | Refresh saved workers, dependencies, and results without scheduling | [$swarm-check](../swarm-check/SKILL.md) |
 | Continue a specific saved effort | [Session pickup](../poteto-mode/playbooks/session-pickup.md) |
 | Stop new submissions and preserve a resumable checkpoint | [Pause safely](../poteto-mode/playbooks/pause-safely.md) |
@@ -115,6 +115,8 @@ The default answer is `/poteto-mode`, which runs most of the others when its ste
 | Run a large or cross-cutting change, or one to review after stepping away | [`/figure-it-out`](../figure-it-out/SKILL.md) |
 | Keep a decision log during a run, and review it afterward | [`/show-me-your-work`](../show-me-your-work/SKILL.md) |
 | Pick a model for each role and a reasoning budget | [`/setup-pstack`](../setup-pstack/SKILL.md) |
+| Tell this process whether it is Cursor or Codex, including cloud work | [`/pstack-set-mode`](../pstack-set-mode/SKILL.md) |
+| Set Codex models for a Codex session | [`/pstack-set-codex`](../pstack-set-codex/SKILL.md) |
 | Turn their own working habits into a personal mode skill | [`/automate-me`](../automate-me/SKILL.md) |
 | Turn what a finished task taught into skill edits | [`/reflect`](../reflect/SKILL.md) |
 | Stop agents from repeating the same mistakes in this repo | [`/correct`](../correct/SKILL.md) |

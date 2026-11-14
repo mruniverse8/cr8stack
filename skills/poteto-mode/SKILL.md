@@ -13,7 +13,7 @@ color: yellow
 
 ## Codex execution
 
-The [local adapter](references/local-codex-compatibility.md) takes precedence over Cursor tool, model, Project, and automation assumptions in the sections below. Name `swarm-sub` or `swarm-cloud` before delegation. Read [swarm](../swarm/SKILL.md) for routing and the [worker contract](../swarm/references/worker-contract.md) for scoped briefs. Preserve specialist phases instead of recursively delegating the entire playbook.
+Skip this section in Cursor mode, including when this process is a Cursor cloud agent. Read [modes](../pstack-set-mode/references/modes.md). The [local adapter](references/local-codex-compatibility.md) takes precedence over Cursor tool, model, Project, and automation assumptions in the sections below only when mode is codex. Name `swarm-sub` or `swarm-cloud` before delegation. Read [swarm](../swarm/SKILL.md) for routing and the [worker contract](../swarm/references/worker-contract.md) for scoped briefs. Preserve specialist phases instead of recursively delegating the entire playbook.
 
 Cloud or mixed plans use the [run-state contract](../swarm/references/run-state.md). Record dependencies and acceptance checks before submitting; `$swarm-check` reconciles the registry and prints all planned work without scheduling. Resume a prior run through Session pickup. An explicit pause survives checking and new sessions. Local coordination and finite watching require an active process; the files do not provide an always-on cloud coordinator.
 
@@ -35,7 +35,7 @@ Remaining triggers:
 - Any code → name the data shape first, and choose its organizing structure per **principle-model-the-domain**.
 - Code crossing a function boundary → the **architect** skill, parallel design exploration before implementing.
 - Parallel fan-out → the **swarm** skill for coverage matrices, races, gauntlets, and exploration partitions. Use **arena** for design or code bakeoffs with base selection and grafting.
-- Arena, or why → read `~/.codex/skills/pstack-set-codex/references/models.md` first. Ask permission before either pass. Say that the pass costs a parallel Codex panel. A missing yes stops that pass.
+- Arena, or why → in Cursor mode, use the Cursor role lines in the Subagents section. Do not read the Codex model table. In Codex mode, read [models.md](../pstack-set-codex/references/models.md) first, ask permission, and stop that pass when the user has not said yes.
 - Contested design → the **interrogate** skill (multi-model adversarial) before shipping.
 - Nontrivial multi-step → write the throughput checkpoint (Feature step 3).
 - Any prose surface, your reply to the user included → the **unslop** skill. Write the reply per **Writing the reply**. Agent-facing prose also follows the **create-skill** skill (Cursor's built-in for authoring SKILL.md files).

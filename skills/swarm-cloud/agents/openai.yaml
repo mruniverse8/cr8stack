@@ -1,4 +1,4 @@
 interface:
   display_name: "Swarm Cloud"
-  short_description: "Coordinate isolated Codex Cloud tasks"
+  short_description: "Coordinate isolated cloud workers for this host"
   default_prompt: "Use $swarm-cloud to execute this saved dependency plan."
