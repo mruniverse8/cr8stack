@@ -4,6 +4,9 @@ description: "Use only when the user explicitly asks for TDD, a failing test, or
 disable-model-invocation: true
 ---
 
+> **Codex only:** Read [the local runtime adapter](../poteto-mode/references/local-codex-compatibility.md) before following this Cursor-authored workflow. Cursor follows the instructions below unchanged.
+
+
 # TDD Bug Fix
 
 When fixing a bug with a clear, cheap test path, make the broken behavior executable before changing production code. The goal is a focused regression test that fails before the fix and passes after it.

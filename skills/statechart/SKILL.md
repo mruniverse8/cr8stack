@@ -4,6 +4,9 @@ description: "Check a TLA+ model of a system that moves between states, such as 
 disable-model-invocation: true
 ---
 
+> **Codex only:** Read [the local runtime adapter](../poteto-mode/references/local-codex-compatibility.md) before following this Cursor-authored workflow. Cursor follows the instructions below unchanged.
+
+
 # Statechart
 
 The chart shows how a system moves between states, in the words of the person who reads it. That person, the reader, decides whether the behavior is right.

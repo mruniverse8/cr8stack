@@ -4,6 +4,9 @@ description: "Apply after completing a task, before declaring done. Verify again
 disable-model-invocation: true
 ---
 
+> **Codex only:** Read [the local runtime adapter](../poteto-mode/references/local-codex-compatibility.md) before following this Cursor-authored workflow. Cursor follows the instructions below unchanged.
+
+
 # Prove It Works
 
 Verify every task output by checking the real thing directly. Do not infer from proxies, self-reports, or "it compiles."

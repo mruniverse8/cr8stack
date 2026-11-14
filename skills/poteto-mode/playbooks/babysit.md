@@ -1,5 +1,15 @@
 ### Babysit
 
+#### Codex execution
+
+In Codex, the [local adapter](../references/local-codex-compatibility.md) overrides conflicting Cursor host assumptions below. Resolve workers through [swarm-sub](../../swarm-sub/SKILL.md) or [swarm-cloud](../../swarm-cloud/SKILL.md), keeping this playbook's phases. A cloud or mixed plan uses the [run-state contract](../../swarm/references/run-state.md). No silent backend fallback.
+
+Declare the requested mode as below, then use the actual forge tools and an active Codex coordinator. Cursor `/loop` is not supplied here. Finite checks or watch commands operate only while their process is alive. Persist progress in the run registry and decision trail before the session stops.
+
+If a fix or verifier uses Cloud, track its task ID and retrieve its evidence before acting. The coordinator owns local integration and forge writes unless the remote workflow is established. Run swarm-check on pickup before submitting replacements or relying on old worker summaries. Completed Cloud work is not an independent verified verdict, and babysitting still does not grant merge authority.
+
+#### Cursor workflow and shared task phases
+
 **You own the merge frontier. Declare a mode, clear one PR at a time, stop where the human's call begins.** This playbook replaces Cursor's built-in babysit skill for these requests, so do not route there even though its description matches the same words. A request to land or ship is `playbooks/shipping.md`, which begins where this playbook ends.
 
 Babysitting starts when the user asks for it, which is normally once a phase or a whole stack is built, not when a PR opens. Finish the stack, get it green here, then land it through Shipping.

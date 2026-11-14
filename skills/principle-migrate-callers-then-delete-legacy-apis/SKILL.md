@@ -4,6 +4,9 @@ description: "Apply when introducing a new internal API while old callers still 
 disable-model-invocation: true
 ---
 
+> **Codex only:** Read [the local runtime adapter](../poteto-mode/references/local-codex-compatibility.md) before following this Cursor-authored workflow. Cursor follows the instructions below unchanged.
+
+
 # Migrate Callers Then Delete Legacy APIs
 
 - Update tests to assert the new contract, and delete tests that only protect pre-refactor implementation details

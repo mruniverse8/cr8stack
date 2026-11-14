@@ -1,5 +1,13 @@
 ### Bug fix
 
+#### Codex execution
+
+In Codex, the [local adapter](../references/local-codex-compatibility.md) overrides conflicting Cursor host assumptions below. Resolve workers through [swarm-sub](../../swarm-sub/SKILL.md) or [swarm-cloud](../../swarm-cloud/SKILL.md), keeping this playbook's phases. A cloud or mixed plan uses the [run-state contract](../../swarm/references/run-state.md). No silent backend fallback.
+
+Choose a backend that can reach the actual reproduction surface. Local tools, MCPs, and credentials do not transfer to Cloud. If the requested backend cannot reproduce the symptom, report the missing surface instead of quietly moving it. Cloud investigation and implementation are bounded tasks with retrieved evidence. The local coordinator owns integration and PR work unless remote forge access was explicitly established. Replace Cursor `/loop` with the current active coordinator's bounded iterations and durable checkpoints.
+
+#### Cursor workflow and shared task phases
+
 **You own this task. Plan, review, verify.** Delegate investigation and the fix to subagents, stay in the lead. Pick each subagent's reasoning level and fast or standard speed for the job, per the Subagents section.
 
 Be scientific. Every shipped line traces to runtime evidence. Belt-and-suspenders that "might help" is a hypothesis, not a fix. It does not ship. When evidence refutes a hypothesis, revert what it motivated. The smallest change the evidence justifies ships, nothing more.

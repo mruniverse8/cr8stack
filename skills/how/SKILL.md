@@ -4,7 +4,18 @@ description: "Use for \"how does X work\", code walkthroughs before changing som
 disable-model-invocation: true
 ---
 
+> **Codex only:** Read [the local runtime adapter](../poteto-mode/references/local-codex-compatibility.md) before following this Cursor-authored workflow. Cursor follows the instructions below unchanged.
+
+
 # How
+
+## Codex execution
+
+In Codex, the [local adapter](../poteto-mode/references/local-codex-compatibility.md) governs delegation, models, and host capabilities. Read the [worker contract](../swarm/references/worker-contract.md) and select [swarm-sub](../swarm-sub/SKILL.md) or [swarm-cloud](../swarm-cloud/SKILL.md) at each worker boundary. Keep this skill's phases and output; the backend transports its scoped workers rather than restarting this whole skill. An unspecified backend uses Cloud through the desktop tools; explicit native requests and genuinely local-only work use native subagents. Report blockers without switching backends.
+
+Explorers and explainers remain separate roles. Cloud investigation writes only the agreed result artifacts needed for retrieval; it does not change product code. Use native workers when the evidence needs local unpushed code unless the caller explicitly chooses and prepares Cloud.
+
+## Cursor workflow and shared task phases
 
 Explore the codebase to answer "how does X work?" questions. Produce architectural explanations at the level of a senior engineer onboarding onto a subsystem, enough to build a working mental model, not so much that it reads like annotated source code.
 

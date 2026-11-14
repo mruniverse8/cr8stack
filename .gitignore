@@ -1,0 +1,6 @@
+__pycache__/
+*.pyc
+.DS_Store
+.pstack/
+error.log
+skills/poteto-mode/references/local-installation.json

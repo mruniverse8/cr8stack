@@ -4,7 +4,18 @@ description: "Use for 'why does X work this way', 'why we picked Y', design rati
 disable-model-invocation: true
 ---
 
+> **Codex only:** Read [the local runtime adapter](../poteto-mode/references/local-codex-compatibility.md) before following this Cursor-authored workflow. Cursor follows the instructions below unchanged.
+
+
 # Why
+
+## Codex execution
+
+In Codex, the [local adapter](../poteto-mode/references/local-codex-compatibility.md) governs delegation, models, and host capabilities. Read the [worker contract](../swarm/references/worker-contract.md) and select [swarm-sub](../swarm-sub/SKILL.md) or [swarm-cloud](../swarm-cloud/SKILL.md) at each worker boundary. Keep this skill's phases and output; the backend transports its scoped workers rather than restarting this whole skill. An unspecified backend uses Cloud through the desktop tools; explicit native requests and genuinely local-only work use native subagents. Report blockers without switching backends.
+
+Check each selected backend's actual evidence connectors. Local MCP access does not transfer to Cloud. Keep unavailable evidence categories visible as gaps instead of inventing access or passing credentials through briefs.
+
+## Cursor workflow and shared task phases
 
 Investigate the motivation and intent behind code. The companion `how` skill answers what the code does and how it works. `why` answers what forces led to its shape.
 

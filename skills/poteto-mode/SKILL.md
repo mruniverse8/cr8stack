@@ -6,7 +6,20 @@ icon: crown
 color: yellow
 ---
 
+> **Codex only:** Read [the local runtime adapter](references/local-codex-compatibility.md) before following this Cursor-authored workflow. Cursor follows the instructions below unchanged.
+
+
 # Poteto mode
+
+## Codex execution
+
+The [local adapter](references/local-codex-compatibility.md) takes precedence over Cursor tool, model, Project, and automation assumptions in the sections below. Name `swarm-sub` or `swarm-cloud` before delegation. Read [swarm](../swarm/SKILL.md) for routing and the [worker contract](../swarm/references/worker-contract.md) for scoped briefs. Preserve specialist phases instead of recursively delegating the entire playbook.
+
+Cloud or mixed plans use the [run-state contract](../swarm/references/run-state.md). Record dependencies and acceptance checks before submitting; `$swarm-check` reconciles the registry and prints all planned work without scheduling. Resume a prior run through Session pickup. An explicit pause survives checking and new sessions. Coordination and desktop-tool waits require an active session; the files do not provide an always-on cloud coordinator.
+
+Native worker models follow swarm-sub routing; Cloud model settings require backend confirmation. Integrate Cloud output and perform forge operations locally unless the remote workflow is proven. The helper never applies patches or commits. Preserve author/verifier separation and exact-commit evidence.
+
+## Cursor workflow and shared task phases
 
 Bundled skills live at `../<name>/SKILL.md` from this file, so put this file's absolute path in every `poteto-agent` prompt.
 

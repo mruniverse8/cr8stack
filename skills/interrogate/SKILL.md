@@ -4,7 +4,18 @@ description: "Use for \"interrogate\", \"adversarial review\", \"multi-model rev
 disable-model-invocation: true
 ---
 
+> **Codex only:** Read [the local runtime adapter](../poteto-mode/references/local-codex-compatibility.md) before following this Cursor-authored workflow. Cursor follows the instructions below unchanged.
+
+
 # Interrogate
+
+## Codex execution
+
+In Codex, the [local adapter](../poteto-mode/references/local-codex-compatibility.md) governs delegation, models, and host capabilities. Read the [worker contract](../swarm/references/worker-contract.md) and select [swarm-sub](../swarm-sub/SKILL.md) or [swarm-cloud](../swarm-cloud/SKILL.md) at each worker boundary. Keep this skill's phases and output; the backend transports its scoped workers rather than restarting this whole skill. An unspecified backend uses Cloud through the desktop tools; explicit native requests and genuinely local-only work use native subagents. Report blockers without switching backends.
+
+Pin the base and head SHAs for every adversary. Cloud workers may write only permitted reproduction and result artifacts, not product fixes. Retrieve their commands and evidence, then independently rerun findings on the checked code before accepting them.
+
+## Cursor workflow and shared task phases
 
 Adversaries try to break a change or a design. A finding survives only when a run proves it. Report the findings. Do not apply fixes.
 

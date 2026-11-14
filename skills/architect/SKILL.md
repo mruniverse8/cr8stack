@@ -4,7 +4,18 @@ description: "Sketch types, signatures, and module structure before code, then s
 disable-model-invocation: true
 ---
 
+> **Codex only:** Read [the local runtime adapter](../poteto-mode/references/local-codex-compatibility.md) before following this Cursor-authored workflow. Cursor follows the instructions below unchanged.
+
+
 # Architect
+
+## Codex execution
+
+In Codex, the [local adapter](../poteto-mode/references/local-codex-compatibility.md) governs delegation, models, and host capabilities. Read the [worker contract](../swarm/references/worker-contract.md) and select [swarm-sub](../swarm-sub/SKILL.md) or [swarm-cloud](../swarm-cloud/SKILL.md) at each worker boundary. Keep this skill's phases and output; the backend transports its scoped workers rather than restarting this whole skill. An unspecified backend uses Cloud through the desktop tools; explicit native requests and genuinely local-only work use native subagents. Report blockers without switching backends.
+
+Pass the chosen backend into arena and keep accessible grounding and sketches in each brief. The caller owns design synthesis and opt-in checkpoints. Local files and uncommitted sketches require an explicit Cloud transport step.
+
+## Cursor workflow and shared task phases
 
 Sketch types, function signatures, class shapes, and module boundaries with `not implemented` bodies and pseudocode. Synthesize across multiple model perspectives, then fill in code against the chosen sketch.
 
@@ -25,6 +36,8 @@ Build a real mental model of every system the new code touches. Run the **how** 
 Skip Phase A only when the work is genuinely greenfield with no surrounding system to integrate.
 
 ## Phase B: Sketch
+
+Before invoking Arena, honor its [cost approval](../arena/references/cost-approval.md). An architecture request or automatic playbook routing does not approve candidate or judge spending. Present the bounded panel and wait unless the user already approved that exact scope. If approval is absent, stop the Arena phase; do not start equivalent competing workers under another name.
 
 Run the **arena** skill with the design-sketch task and the Phase A grounding artifacts. Pass `references/runner-prompt.md` as each runner's prompt.
 

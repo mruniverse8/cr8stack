@@ -1,5 +1,13 @@
 ### Autopilot-stack
 
+#### Codex execution
+
+In Codex, the [local adapter](../references/local-codex-compatibility.md) overrides conflicting Cursor host assumptions below. Resolve workers through [swarm-sub](../../swarm-sub/SKILL.md) or [swarm-cloud](../../swarm-cloud/SKILL.md), keeping this playbook's phases. A cloud or mixed plan uses the [run-state contract](../../swarm/references/run-state.md). No silent backend fallback.
+
+Apply Autopilot-full's Codex substitutions and preserve this playbook's no-merge boundary. The coordinator integrates accepted Cloud changes into the planned local branches and maintains real dependency bases. Keep a run registry and stop new submissions on pause. Status checks refresh results without lifting the pause or authorizing a push after handoff.
+
+#### Cursor workflow and shared task phases
+
 Run the Autopilot-full playbook, but do not merge.
 
 1. **In place of step 5, stop at verified.** Stop when each PR is verified and green at its current head, then hand the PRs to the operator. After the handoff, nobody pushes without the operator's go. Every loop tick prompt names this file, so each tick sees the no-merge rule.

@@ -4,6 +4,9 @@ description: "Apply when product, UX, or feature-scope tradeoffs come up. Choose
 disable-model-invocation: true
 ---
 
+> **Codex only:** Read [the local runtime adapter](../poteto-mode/references/local-codex-compatibility.md) before following this Cursor-authored workflow. Cursor follows the instructions below unchanged.
+
+
 # Experience First
 
 When implementation convenience conflicts with user delight, choose delight.

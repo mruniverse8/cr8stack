@@ -3,6 +3,9 @@ name: deslop
 description: Remove AI-generated code slop and clean up code style
 ---
 
+> **Codex only:** Read [the local runtime adapter](../poteto-mode/references/local-codex-compatibility.md) before following this Cursor-authored workflow. Cursor follows the instructions below unchanged.
+
+
 # Remove AI code slop
 
 Check the diff against main and remove AI-generated slop introduced in the branch.
