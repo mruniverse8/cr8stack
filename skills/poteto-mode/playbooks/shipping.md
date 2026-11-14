@@ -1,5 +1,15 @@
 ### Shipping
 
+#### Codex execution
+
+In Codex, the [local adapter](../references/local-codex-compatibility.md) overrides conflicting Cursor host assumptions below. Resolve workers through [swarm-sub](../../swarm-sub/SKILL.md) or [swarm-cloud](../../swarm-cloud/SKILL.md), keeping this playbook's phases. A cloud or mixed plan uses the [run-state contract](../../swarm/references/run-state.md). No silent backend fallback.
+
+Assign independent verifiers through the selected backend. A native verifier is not a Cloud VM; Cloud verification requires remotely accessible source, drivers, and returned evidence. Pin every verdict to the actual base/head and inspect the retrieved artifact rather than a remote path or completed status.
+
+The coordinator performs local forge operations under the user's merge authorization. Keep the bottom-up verified ceiling and patch-validity rules below. Replace `/loop` with active checking through the desktop tools; persist the run before leaving the coordinator. Helpers never merge, push, or retarget. A status refresh alone authorizes none of those operations.
+
+#### Cursor workflow and shared task phases
+
 **You own what lands. Verify each PR independently, land only the verified run from the root, then keep your hands off the stack.**
 
 1. **Resolve the forge, then verify each PR independently before it lands.** GitHub CLI (`gh`) is the default. If `command -v origin` succeeds and Origin can resolve the repository, use `origin pr` for every PR operation. Otherwise stay on `gh` and record the fallback. Never require Graphite (`gt`). One verifier per PR, each a Cursor cloud agent, runs the change the way a user would with the matching control skill (such as `control-ui` or `control-cli` from `cursor-team-kit`), parent against head, and posts `PASS`, `PASS+NOTES`, or `FAIL` on that PR. Only a verdict from an agent that did not write the code counts, because an author checks what it meant to build. Green CI and an approving bot review are not verdicts, because neither runs the change as a user would.

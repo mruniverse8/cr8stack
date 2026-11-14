@@ -1,0 +1,4 @@
+interface:
+  display_name: "Swarm Status"
+  short_description: "Scan swarm progress and recovery steps"
+  default_prompt: "Use $swarm-status to scan this project and write a concise SWARM-STATUS.md."

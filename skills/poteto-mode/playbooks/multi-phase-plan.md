@@ -1,5 +1,17 @@
 ### Multi-phase or multi-PR plan
 
+#### Codex execution
+
+In Codex, the [local adapter](../references/local-codex-compatibility.md) overrides conflicting Cursor host assumptions below. Resolve workers through [swarm-sub](../../swarm-sub/SKILL.md) or [swarm-cloud](../../swarm-cloud/SKILL.md), keeping this playbook's phases. A cloud or mixed plan uses the [run-state contract](../../swarm/references/run-state.md). No silent backend fallback.
+
+Keep the plan as the deliverable and wait for the operator's explicit execution go. Each work item records its backend, dependencies, acceptance checks, remotely available inputs, and required evidence. Use a durable registry for Cloud or mixed execution. Resolve skill paths from this installation, not an assumed `pstack/skills` checkout in the product repository.
+
+Preserve required verification scenarios but batch them within the configured concurrency limit. A lane is an evidence obligation, not a promise of a separate native agent or ten simultaneous Cloud machines. Cloud model controls, live driving, and artifact retrieval must be established before promising them. Unknown or unavailable evidence remains a gap. The coordinator integrates patches and owns PR operations unless the remote workflow is validated.
+
+Replace `/loop 1h` and cloud Project assumptions with active-session checking through the desktop tools and the run-state contract. The saved plan and registry permit later Session pickup; they do not keep a coordinator alive while its host is stopped. Checking cannot clear a user pause.
+
+#### Cursor workflow and shared task phases
+
 **You own the plan, not the code. The plan is a checklist an owner runs box by box and the operator audits from the evidence.** The plan is the deliverable. Do not implement.
 
 1. When the change is one or two files with an obvious approach, skip the plan. Say so and stop.

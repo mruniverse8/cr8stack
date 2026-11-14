@@ -1,5 +1,17 @@
 ### Orchestrate
 
+#### Codex execution
+
+In Codex, the [local adapter](../references/local-codex-compatibility.md) overrides conflicting Cursor host assumptions below. Resolve workers through [swarm-sub](../../swarm-sub/SKILL.md) or [swarm-cloud](../../swarm-cloud/SKILL.md), keeping this playbook's phases. A cloud or mixed plan uses the [run-state contract](../../swarm/references/run-state.md). No silent backend fallback.
+
+The coordinator runs in the actual Codex session. Use native collaboration for swarm-sub and the documented desktop tools for swarm-cloud. The prohibition on scripts and polling below is Cursor-specific; Codex uses the shared helper for local state and desktop tools to wait for and read Cloud results while the session is active. No always-on cloud Project, event subscription, nested remote shell, cancellation, or follow-up API is assumed.
+
+Save the task graph and worker identities before fan-out. Keep one owner for each branch or integration unit. Cloud tasks are bounded workers; the coordinator retrieves and integrates patches in isolated local worktrees and owns PR creation, updates, and merging unless a remote forge workflow has been validated. Give dependent workers the accepted integration revision, not a sibling's inaccessible workspace path. Retain independent verification at exact commits; report same-family review when cross-family models are unavailable.
+
+A dropped coordinator is recovered through Session pickup and swarm-check. Do not resubmit unknown outcomes or replace a possibly running Cloud writer until its ownership is reconciled. Respect the run's concurrency setting rather than the approximate ten-worker Cursor topology below.
+
+#### Cursor workflow and shared task phases
+
 **You run the program, never the code. Decide which agent does each piece of work, then check what each one produces.** For a standing project handed to one coordinator chat: multi-day, many stacked PRs, dozens to hundreds of subagents, few human turns. One task driven to a predicate is Autonomous run. One ambitious run that needs a bespoke workflow is figure-it-out. Work that one agent could finish inside the session's budget is not a program.
 
 Run it with your own tools. Spawn workers with `Task`. Keep the program's state in the Project tracker (`notes.md`) and the Project store. Watch each PR with PR and CI event subscriptions when your harness has them. Call no scripts, run no polling loops, and never relay messages or status between agents.

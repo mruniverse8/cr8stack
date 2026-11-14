@@ -4,7 +4,16 @@ description: "Spawn Comment Sicko, fix accepted findings, and offer encodings fo
 disable-model-invocation: true
 ---
 
+> **Codex only:** Read [the local runtime adapter](../poteto-mode/references/local-codex-compatibility.md) before following this Cursor-authored workflow. Cursor follows the instructions below unchanged.
+
+
 # No comments
+
+## Codex execution
+
+Use the [swarm router](../swarm/SKILL.md) for the scoped comment review. Include the caller's comment policy and accessible project standards in the worker brief. If the Comment Sicko role definition is available, include its actual instructions. Otherwise report that specialist gap and perform the scoped audit under the caller's rules. Keep unpushed local diff review on native workers unless its inputs have been made accessible to Cloud. The Cursor-specific Task step below uses its own installed specialist.
+
+## Cursor workflow and shared review phases
 
 Spawn Comment Sicko. Act on accepted findings.
 

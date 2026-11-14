@@ -4,7 +4,16 @@ description: "Use for \"automate me\", \"create/update/refresh my -mode skill\",
 disable-model-invocation: true
 ---
 
+> **Codex only:** Read [the local runtime adapter](../poteto-mode/references/local-codex-compatibility.md) before following this Cursor-authored workflow. Cursor follows the instructions below unchanged.
+
+
 # Automate me
+
+## Codex execution
+
+Use the [swarm router](../swarm/SKILL.md) for independent history slices. Obtain scoped Codex history through available desktop read tools or caller-provided transcripts. Use native workers for inputs available only in the local workspace. Supply accessible transcript contents before using Cloud readers. Author the result through the installed skill-creator and apply the user's existing authorization to saving or publishing it.
+
+## Cursor workflow and shared authoring phases
 
 A guided flow for turning the user's working conventions into a skill agents will follow. The output is one `-mode` skill tailored to them (e.g. `jay-mode`, `priya-mode`).
 
