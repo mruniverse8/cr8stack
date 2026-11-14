@@ -1,0 +1,11 @@
+# Worker contract
+
+Each assignment names its execution backend (`sub` or `cloud`), goal, bounded ownership, dependencies, source commit, expected output, acceptance checks, and permitted external actions. For races declare first pass, rank all, or best-of before launching. Exact model/effort requests are backend-specific, and an unsupported request is a blocker rather than a silent substitution.
+
+Native subagents can receive local file pointers. Cloud workers need self-contained prompts and repository-relative or actually accessible inputs. They cannot read the coordinator's laptop, share its credentials, or inherit its installed skills merely because the parent can. Stage the required skill/reference bundle in a user-authorized remote branch or include the bounded instructions in the prompt. Keep credentials out of prompts, results, and logs.
+
+Workers return PASS, ISSUES, or BLOCKED, with the actual starting commit, changed paths, exact check commands and output, and retrievable evidence. Measurements also name sample count, order, and baseline/head identifiers. A runtime status of ready/completed is not a behavioral verdict. A filesystem path on another machine is not retrieved evidence. An independent verifier must inspect the same artifact the coordinator integrates.
+
+For cloud transport, the task may add and stage `.pstack-results/<item-id>.md` as the explicit reporting exception to application ownership boundaries. Stage the result so Cloud diff can carry it. It includes commands, outputs, actual source SHA, findings, and missing evidence. The coordinator extracts this new file from the diff without executing or applying it. Do not commit worker metadata to the application unless the user wants it preserved there.
+
+Inspect every result and patch. Missing proof gets one bounded evidence retry on the same supported model, then a coverage gap. Ambiguous submission is not a failed worker and must not trigger a retry. A substantive native-model escalation follows swarm-sub's existing bounded routing. Cloud escalation has no assumed native model controls. Account for every planned slice and report dropouts. Artifact changes require fresh acceptance. Neither a worker summary nor consensus among models proves correctness.

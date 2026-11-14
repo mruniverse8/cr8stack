@@ -1,0 +1,4 @@
+interface:
+  display_name: "Swarm Check"
+  short_description: "Check saved runs and recover cloud progress"
+  default_prompt: "Use $swarm-check to report this saved run without scheduling work."
