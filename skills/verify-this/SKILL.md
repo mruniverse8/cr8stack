@@ -3,9 +3,6 @@ name: verify-this
 description: "Verify a claim with fresh local evidence: restate it falsifiably, capture baseline and treatment, compare artifacts, and return VERIFIED, NOT VERIFIED, or INCONCLUSIVE."
 ---
 
-> **Codex only:** Read [the local runtime adapter](../poteto-mode/references/local-codex-compatibility.md) before following this Cursor-authored workflow. Cursor follows the instructions below unchanged.
-
-
 # Verify This
 
 Verification is not a recap. It proves or disproves a specific claim with repeatable evidence.

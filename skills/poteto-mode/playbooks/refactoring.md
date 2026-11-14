@@ -1,13 +1,5 @@
 ### Refactoring
 
-#### Codex execution
-
-In Codex, the [local adapter](../references/local-codex-compatibility.md) overrides conflicting Cursor host assumptions below. Resolve workers through [swarm-sub](../../swarm-sub/SKILL.md) or [swarm-cloud](../../swarm-cloud/SKILL.md), keeping this playbook's phases. A cloud or mixed plan uses the [run-state contract](../../swarm/references/run-state.md). No silent backend fallback.
-
-Record the behavior pin, base commit, worker scope, and backend before changing structure. Cloud workers receive cloud-accessible inputs, never local absolute paths. Retrieve candidate patches and equivalence evidence, integrate in isolated local worktrees, and accept dependencies only after their checks and integration conditions hold.
-
-#### Cursor workflow and shared task phases
-
 **You own the contract. The structure changes. The behavior does not.** Distinct from Feature, which adds behavior, and Bug fix, which corrects it.
 
 If the cleanup reveals a missing feature or a real bug, split it out and ship the structural change first against the pinned contract. A redesign is allowed, but name it and route to Feature. Large or cross-cutting structural work belongs to the **figure-it-out** skill. This playbook is the focused-to-medium change.

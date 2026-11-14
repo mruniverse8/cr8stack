@@ -4,9 +4,6 @@ description: "Find the mistakes agents keep repeating in this repo and make each
 disable-model-invocation: true
 ---
 
-> **Codex only:** Read [the local runtime adapter](../poteto-mode/references/local-codex-compatibility.md) before following this Cursor-authored workflow. Cursor follows the instructions below unchanged.
-
-
 # Correct
 
 The operator keeps correcting agents in this repo for the same mistakes. Change the repo so the next agent can't make them.

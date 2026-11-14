@@ -4,9 +4,6 @@ description: "Apply when wiring validation, error handling, or framework adapter
 disable-model-invocation: true
 ---
 
-> **Codex only:** Read [the local runtime adapter](../poteto-mode/references/local-codex-compatibility.md) before following this Cursor-authored workflow. Cursor follows the instructions below unchanged.
-
-
 # Boundary Discipline
 
 Place validation, type narrowing, and error handling at system boundaries. Trust internal code unconditionally. Business logic lives in pure functions. The shell is thin and mechanical.

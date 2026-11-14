@@ -4,22 +4,7 @@ description: "Use for 'why does X work this way', 'why we picked Y', design rati
 disable-model-invocation: true
 ---
 
-> **Codex only:** Read [the local runtime adapter](../poteto-mode/references/local-codex-compatibility.md) before following this Cursor-authored workflow. Cursor follows the instructions below unchanged.
-
-
 # Why
-
-## Codex execution
-
-Skip this section in Cursor mode, including when this process is a Cursor cloud agent. Read [modes](../pstack-set-mode/references/modes.md).
-
-Read [models.md](../pstack-set-codex/references/models.md) before Step 3. Why runs one `gpt-6.1-terra` investigator at high for each evidence source, then one `gpt-6-sol` synthesizer at xhigh. Ask permission and say that this pass costs that parallel fan-out. Wait for a yes in the user's own words. A missing yes stops the investigation.
-
-In Codex, the [local adapter](../poteto-mode/references/local-codex-compatibility.md) governs delegation, models, and host capabilities. Read the [worker contract](../swarm/references/worker-contract.md) and select [swarm-sub](../swarm-sub/SKILL.md) or [swarm-cloud](../swarm-cloud/SKILL.md) at each worker boundary. Keep this skill's phases and output; the backend transports its scoped workers rather than restarting this whole skill. An unspecified backend uses native subagents. Report blockers without switching backends.
-
-Check each selected backend's actual evidence connectors. Local MCP access does not transfer to Cloud. Keep unavailable evidence categories visible as gaps instead of inventing access or passing credentials through briefs.
-
-## Cursor workflow and shared task phases
 
 Investigate the motivation and intent behind code. The companion `how` skill answers what the code does and how it works. `why` answers what forces led to its shape.
 

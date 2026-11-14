@@ -4,23 +4,7 @@ description: "Fan out N parallel workers, drain them, and return one report. Use
 disable-model-invocation: true
 ---
 
-> **Cursor:** Read [modes](../pstack-set-mode/references/modes.md). This process is cursor mode, including a Cursor cloud agent. Skip the Codex section and use Start. `$swarm-cloud` is Start with `environment: "cloud"`.
-> **Codex:** Read [the local runtime adapter](../poteto-mode/references/local-codex-compatibility.md), then use the Codex workflow below.
-
-
 # Swarm
-
-## Codex execution routing
-
-This section applies only in Codex mode. In Cursor mode, `$swarm-cloud` is not Codex Cloud.
-
-Choose a backend before delegating. `$swarm-sub` or an explicit subagent request uses [swarm-sub](../swarm-sub/SKILL.md). `$swarm-cloud` or an explicit Codex Cloud request uses [swarm-cloud](../swarm-cloud/SKILL.md). An unspecified `$swarm` keeps the native subagent default. A plan may select different backends for separate work items; name the backend in the assignment table. Never silently switch after a backend fails.
-
-Both backends use Frame, Fan out, Aggregate, Report. State the completion condition, coverage slices, required evidence, and returned artifact. Before a race choose first pass, rank all, or best-of. Read the [worker contract](references/worker-contract.md). The backend owns model selection, launch, capacity, result retrieval, and retries. The coordinator inspects the real output and returns PASS, ISSUES, or BLOCKED for each slice; missing evidence is a gap.
-
-For durable plans read [run state](references/run-state.md). `$swarm-check` reconciles observations and prints every planned work item without submitting jobs. To continue a particular run, use poteto-mode's Session pickup playbook. A status check never lifts an explicit pause or implies acceptance.
-
-Cursor uses the original workflow below. Codex uses the selected backend and stops here.
 
 ## Start
 

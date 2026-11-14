@@ -4,18 +4,7 @@ description: "Keep a reviewable decision trail for long-running or unattended wo
 disable-model-invocation: true
 ---
 
-> **Codex only:** Read [the local runtime adapter](../poteto-mode/references/local-codex-compatibility.md) before following this Cursor-authored workflow. Cursor follows the instructions below unchanged.
-
-
 # Show me your work
-
-## Codex execution
-
-For a cloud or mixed effort, keep the existing TSV format at `.pstack/runs/<run-id>/decisions.tsv` and link it from the [durable registry](../swarm/references/run-state.md). The stable effort run ID outlives coordinator conversations; each conversation still starts its own `start` stretch under the rules below. Log submissions, pause/resume decisions, accepted evidence, integration, and unresolved outcomes with task IDs and artifact pointers.
-
-`state.json` holds current operational state; the TSV holds append-only decisions. Do not create another decision-log format or treat cached provider status as verified work. Audit against the actual in-scope Codex transcript when available, otherwise disclose its absence. Reviewers follow the selected [execution backend](../swarm/SKILL.md); Cloud reviewers need transported transcripts or scoped digests. Report a missing cross-family review honestly.
-
-## Cursor workflow and shared task phases
 
 Keep one canonical log.
 

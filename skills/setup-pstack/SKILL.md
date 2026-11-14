@@ -3,18 +3,7 @@ name: setup-pstack
 description: Configure which models pstack uses per role and at what reasoning budget. Detects your available models and writes an always-applied rule that overrides the skill defaults. Use for /setup-pstack, "configure pstack models", "pstack budget", or changing pstack's model choices.
 ---
 
-> **Codex only:** Read [the local runtime adapter](../poteto-mode/references/local-codex-compatibility.md) before following this Cursor-authored workflow. Cursor follows the instructions below unchanged.
-
-
 # Setup pstack
-
-## Codex execution
-
-For Codex, stop before the Cursor configuration steps below. `~/.cursor/rules/pstack-models.mdc` does not configure Codex subagents or Codex Cloud. Read the [local adapter](../poteto-mode/references/local-codex-compatibility.md) and explain the requested backend's actual settings instead of writing a Cursor rule.
-
-[swarm-sub](../swarm-sub/SKILL.md) owns native task-based model routing. [swarm-cloud](../swarm-cloud/SKILL.md) uses only model and effort controls established for Cloud; generic local configuration flags are not evidence that a Cloud model changed. Run-level environment, repository, concurrency, and recovery settings belong to the [saved run](../swarm/references/run-state.md). Setup grants no new execution or publication authority.
-
-## Cursor workflow and shared task phases
 
 Write `~/.cursor/rules/pstack-models.mdc`, an always-applied rule that sets pstack's model per role.
 

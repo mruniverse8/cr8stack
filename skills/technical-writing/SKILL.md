@@ -4,9 +4,6 @@ description: "Layered technical-writing standard: Diátaxis structure, Google de
 disable-model-invocation: true
 ---
 
-> **Codex only:** Read [the local runtime adapter](../poteto-mode/references/local-codex-compatibility.md) before following this Cursor-authored workflow. Cursor follows the instructions below unchanged.
-
-
 # Technical writing
 
 Write so a tired engineer understands on the first read. Apply all four layers.

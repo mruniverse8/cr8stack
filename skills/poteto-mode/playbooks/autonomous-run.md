@@ -1,15 +1,5 @@
 ### Autonomous run
 
-#### Codex execution
-
-In Codex, the [local adapter](../references/local-codex-compatibility.md) overrides conflicting Cursor host assumptions below. Resolve workers through [swarm-sub](../../swarm-sub/SKILL.md) or [swarm-cloud](../../swarm-cloud/SKILL.md), keeping this playbook's phases. A cloud or mixed plan uses the [run-state contract](../../swarm/references/run-state.md). No silent backend fallback.
-
-State the predicate, backend, dependencies, and acceptance checks before submission. Use the saved registry and decision trail for Cloud or mixed work. An active local coordinator may run bounded checks and a finite watch; Cursor `/loop` and a persistent Cloud coordinator are not implied.
-
-When a coordinator stops, submitted Cloud tasks may keep working but no new dependencies are promised to launch. Session pickup runs swarm-check, preserves explicit pauses, reconciles uncertain submissions, verifies available results, and resumes only within the original grant. Retain real exit checks and never relax missing evidence into success.
-
-#### Cursor workflow and shared task phases
-
 **You own the exit condition. Define done, then drive to it without stopping.**
 
 1. State the exit condition as a checkable predicate before the first iteration (tests green, repro fixed, all N PRs merged, pixel-diff zero).

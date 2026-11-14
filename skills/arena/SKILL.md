@@ -4,22 +4,7 @@ description: "Spawn N parallel candidates at the same task, pick a base, graft t
 disable-model-invocation: true
 ---
 
-> **Codex only:** Read [the local runtime adapter](../poteto-mode/references/local-codex-compatibility.md) before following this Cursor-authored workflow. Cursor follows the instructions below unchanged.
-
-
 # Arena
-
-## Codex execution
-
-Skip this section in Cursor mode, including when this process is a Cursor cloud agent. Read [modes](../pstack-set-mode/references/modes.md).
-
-Read [models.md](../pstack-set-codex/references/models.md) before Phase A. Arena runs a `gpt-6-sol` runner at xhigh, a `gpt-6.1-terra` runner at high, and a `gpt-6-astra` judge at xhigh. Each runner gets its own worktree. Ask permission and say that this pass costs that parallel panel. Wait for a yes in the user's own words. A missing yes stops the arena. That file supplies the runners and the judge. Record that Sol, Terra, and Astra share the GPT catalog.
-
-In Codex, the [local adapter](../poteto-mode/references/local-codex-compatibility.md) governs delegation, models, and host capabilities. Read the [worker contract](../swarm/references/worker-contract.md) and select [swarm-sub](../swarm-sub/SKILL.md) or [swarm-cloud](../swarm-cloud/SKILL.md) at each worker boundary. Keep this skill's phases and output; the backend transports its scoped workers rather than restarting this whole skill. An unspecified backend uses native subagents. Report blockers without switching backends.
-
-Give each candidate isolated output. For Cloud, retrieve every candidate and its evidence before judging or grafting. The coordinator integrates the synthesis locally. Use available native model choices or confirmed Cloud controls; never claim a cross-family judge when only one family ran.
-
-## Cursor workflow and shared task phases
 
 Open a todolist with one entry per phase (Frame, Fan out, Cross-judge, Pick, Graft, Verify) before launching anything.
 

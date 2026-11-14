@@ -1,19 +1,5 @@
 ### Session pickup
 
-#### Codex execution
-
-In Codex, the [local adapter](../references/local-codex-compatibility.md) overrides conflicting Cursor host assumptions below. Resolve workers through [swarm-sub](../../swarm-sub/SKILL.md) or [swarm-cloud](../../swarm-cloud/SKILL.md), keeping this playbook's phases. A cloud or mixed plan uses the [run-state contract](../../swarm/references/run-state.md). No silent backend fallback.
-
-A named Cloud run ID or `state.json` path goes directly to its saved effort under `.pstack/runs/<run-id>/`. Read the saved plan, briefs, decision trail, and repository identity. Use [swarm-check](../../swarm-check/SKILL.md) before reconstructing the frontier; the [run-state contract](../../swarm/references/run-state.md) owns the helper commands and registry fields.
-
-Print all planned parallel groups and work items, active/unknown workers, ready dependencies, retrieved results, acceptance/integration gaps, pause state, and the next action. Verify relevant commits and retained evidence against the current plan. Preserve valid work and recheck only evidence invalidated by changed code, base, or requirements. A completed Cloud status alone is not proof.
-
-A check or catch-up request never resumes scheduling. An explicit pause survives new sessions until the user requests resume. Once continuation is authorized, run the helper's `resume` command with a new coordinator identity, then let the matching execution playbook submit only acceptance-ready items within capacity. Never resubmit an uncertain launch before reconciliation, and never assume the previous coordinator's native subagents survived.
-
-Use actual available Codex transcripts only when the saved state leaves a relevant gap; do not mine Cursor paths or unrelated workspaces. A local resume cannot establish always-on coordination after the host stops.
-
-#### Cursor workflow and shared task phases
-
 **You own the resume point. Read the prior trail, don't redo it.**
 
 1. Locate the prior trail. A local transcript under the active workspace's `agent-transcripts/` directory (the system prompt names the path. Do not glob across `~/.cursor/projects/*/`, that crosses workspace boundaries and reads private chats from unrelated projects), a cloud-agent URL, or a pushed branch. Read the metadata overview and last messages first, then scan back for the decision points. Parse a long transcript in a subagent and keep the reduced timeline in the main thread (the **principle-guard-the-context-window** skill). Pick each subagent's reasoning level and fast or standard speed for the job, per the Subagents section.

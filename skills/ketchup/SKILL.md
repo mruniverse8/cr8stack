@@ -4,18 +4,7 @@ description: "Catch the user up on what changed in this chat since their last me
 disable-model-invocation: true
 ---
 
-> **Codex only:** Read [the local runtime adapter](../poteto-mode/references/local-codex-compatibility.md) before following this Cursor-authored workflow. Cursor follows the instructions below unchanged.
-
-
 # Ketchup
-
-## Codex execution
-
-For a cloud or mixed effort touched in this conversation, use [swarm-check](../swarm-check/SKILL.md) to refresh worker observations before reporting. It may save its local status snapshot, but it submits no tasks, applies no changes, and clears no pause. This is the only registry refresh exception to the read-only instruction below.
-
-Show every planned work item and its dependency or parallel group, worker state, result, acceptance/integration state, and next action. Keep unknown or stale observations explicit. Link the durable run report for detail. A waiting dependency that the coordinator can later schedule is not a user approval request. Route an actual request to resume through [Session pickup](../poteto-mode/playbooks/session-pickup.md).
-
-## Cursor workflow and shared task phases
 
 Catch the user up on what changed in this chat since the last message they wrote before `/ketchup`, and help them understand each change, not only where it stands. Then lay out every call waiting on them so they can make it from your reply alone. Notifications and subagent results are not their messages. Assume the user remembers their last message and nothing after it.
 
