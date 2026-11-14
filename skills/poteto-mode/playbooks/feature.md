@@ -1,13 +1,5 @@
 ### Feature
 
-#### Codex execution
-
-In Codex, the [local adapter](../references/local-codex-compatibility.md) overrides conflicting Cursor host assumptions below. Resolve workers through [swarm-sub](../../swarm-sub/SKILL.md) or [swarm-cloud](../../swarm-cloud/SKILL.md), keeping this playbook's phases. A cloud or mixed plan uses the [run-state contract](../../swarm/references/run-state.md). No silent backend fallback.
-
-Name the backend for each scoped implementer and verifier. Cloud workers need the source, design, instructions, and verifier available in their environment. Native workers share this host and need ownership boundaries or isolated worktrees. Pin verification to the actual base and head, retrieve evidence, and integrate accepted patches locally before PR operations. An accepted implementation must satisfy its own checks before its dependents become ready.
-
-#### Cursor workflow and shared task phases
-
 **You own the design. Plan, review, verify.** Delegate implementation. Stay in the lead.
 
 1. `how` over the affected subsystem.

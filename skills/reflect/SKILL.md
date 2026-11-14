@@ -4,18 +4,7 @@ description: Spawn three parallel review subagents over the active transcript, s
 disable-model-invocation: true
 ---
 
-> **Codex only:** Read [the local runtime adapter](../poteto-mode/references/local-codex-compatibility.md) before following this Cursor-authored workflow. Cursor follows the instructions below unchanged.
-
-
 # Reflect
-
-## Codex execution
-
-In Codex, the [local adapter](../poteto-mode/references/local-codex-compatibility.md) governs delegation, models, and host capabilities. Read the [worker contract](../swarm/references/worker-contract.md) and select [swarm-sub](../swarm-sub/SKILL.md) or [swarm-cloud](../swarm-cloud/SKILL.md) at each worker boundary. Keep this skill's phases and output; the backend transports its scoped workers rather than restarting this whole skill. An unspecified backend uses native subagents. Report blockers without switching backends.
-
-Use only the current task's available transcript or a scoped digest. A local transcript pathname is not Cloud context. Retrieve review artifacts before synthesis and preserve the skill's explicit approval boundary for skill edits.
-
-## Cursor workflow and shared task phases
 
 Mine the current conversation for durable learnings, then route them into skill edits.
 

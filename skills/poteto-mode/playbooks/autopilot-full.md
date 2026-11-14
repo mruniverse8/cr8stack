@@ -1,17 +1,5 @@
 ### Autopilot-full
 
-#### Codex execution
-
-In Codex, the [local adapter](../references/local-codex-compatibility.md) overrides conflicting Cursor host assumptions below. Resolve workers through [swarm-sub](../../swarm-sub/SKILL.md) or [swarm-cloud](../../swarm-cloud/SKILL.md), keeping this playbook's phases. A cloud or mixed plan uses the [run-state contract](../../swarm/references/run-state.md). No silent backend fallback.
-
-The operator's grant still defines what may merge. Each plan item records the chosen backend and integration owner. A Cloud task produces scoped implementation or verification artifacts; its completed status is not a merge-ready verdict. The coordinator retrieves evidence, integrates accepted patches, and performs forge operations locally unless remote permissions and the exact workflow are established.
-
-Independent verifiers receive exact base/head commits and the real driver. Preserve every required lane, batching within capacity. A missing artifact or unavailable live surface blocks the verdict. Changes to the tested patch/base get the applicable fresh checks. Generic local model flags do not confirm a Cloud model.
-
-Replace Cursor `/loop` and Project stores with the durable registry, decision trail, and active-process checks. On hold, persist pause and stop submitting. Running Cloud tasks may continue; report them until cancellation is actually confirmed. Resume through Session pickup, reconciling results and uncertain submissions before any new task.
-
-#### Cursor workflow and shared task phases
-
 **You own the verdicts, never the PRs. One owner carries each PR from build to merge, and nothing merges until your swarm, which never wrote the code, has proven the code that lands.**
 
 A verdict covers one patch and green CI covers one head. Step 4 runs a full swarm once, and again only for a major change. The patch-id rule in `playbooks/shipping.md` can carry a lane's result, and every new head needs its own green CI.

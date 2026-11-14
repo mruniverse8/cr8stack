@@ -1,15 +1,5 @@
 ### Opening a PR
 
-#### Codex execution
-
-In Codex, the [local adapter](../references/local-codex-compatibility.md) overrides conflicting Cursor host assumptions below. Resolve workers through [swarm-sub](../../swarm-sub/SKILL.md) or [swarm-cloud](../../swarm-cloud/SKILL.md), keeping this playbook's phases. A cloud or mixed plan uses the [run-state contract](../../swarm/references/run-state.md). No silent backend fallback.
-
-Treat Cloud output as a patch to inspect and integrate in an isolated local worktree. Review its changed paths against the worker scope and rerun relevant checks before creating or updating the PR. The coordinator owns the integration branch and forge operations unless remote access was established. The shared helper never applies or commits a patch.
-
-For native workers, assign disjoint ownership or separate worktrees. Do not reset an unrelated or dirty checkout to imitate the Cursor worktree recipe below. Keep cloud results and their evidence reachable through the saved run. PR opening does not start babysitting or authorize merging.
-
-#### Cursor workflow and shared task phases
-
 Invoked at the end of every other playbook.
 
 **Worktree.** Work from a git worktree off main. Subagents inherit it. Multiple `Task` calls on the same branch each get their own worktree, or `git fetch && git reset --hard origin/<branch>` between them. Dirty branch with unrelated work: patch out, fresh worktree, apply. Snarled worktree: reset from main, redo minimally.

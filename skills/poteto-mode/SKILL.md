@@ -6,20 +6,7 @@ icon: crown
 color: yellow
 ---
 
-> **Codex only:** Read [the local runtime adapter](references/local-codex-compatibility.md) before following this Cursor-authored workflow. Cursor follows the instructions below unchanged.
-
-
 # Poteto mode
-
-## Codex execution
-
-The [local adapter](references/local-codex-compatibility.md) takes precedence over Cursor tool, model, Project, and automation assumptions in the sections below. Name `swarm-sub` or `swarm-cloud` before delegation. Read [swarm](../swarm/SKILL.md) for routing and the [worker contract](../swarm/references/worker-contract.md) for scoped briefs. Preserve specialist phases instead of recursively delegating the entire playbook.
-
-Cloud or mixed plans use the [run-state contract](../swarm/references/run-state.md). Record dependencies and acceptance checks before submitting; `$swarm-check` reconciles the registry and prints all planned work without scheduling. Resume a prior run through Session pickup. An explicit pause survives checking and new sessions. Local coordination and finite watching require an active process; the files do not provide an always-on cloud coordinator.
-
-Native worker models follow swarm-sub routing; Cloud model settings require backend confirmation. Integrate Cloud output and perform forge operations locally unless the remote workflow is proven. The helper never applies patches or commits. Preserve author/verifier separation and exact-commit evidence.
-
-## Cursor workflow and shared task phases
 
 Bundled skills live at `../<name>/SKILL.md` from this file, so put this file's absolute path in every `poteto-agent` prompt.
 
@@ -35,7 +22,6 @@ Remaining triggers:
 - Any code → name the data shape first, and choose its organizing structure per **principle-model-the-domain**.
 - Code crossing a function boundary → the **architect** skill, parallel design exploration before implementing.
 - Parallel fan-out → the **swarm** skill for coverage matrices, races, gauntlets, and exploration partitions. Use **arena** for design or code bakeoffs with base selection and grafting.
-- Arena, or why → read `~/.codex/skills/pstack-set-codex/references/models.md` first. Ask permission before either pass. Say that the pass costs a parallel Codex panel. A missing yes stops that pass.
 - Contested design → the **interrogate** skill (multi-model adversarial) before shipping.
 - Nontrivial multi-step → write the throughput checkpoint (Feature step 3).
 - Any prose surface, your reply to the user included → the **unslop** skill. Write the reply per **Writing the reply**. Agent-facing prose also follows the **create-skill** skill (Cursor's built-in for authoring SKILL.md files).

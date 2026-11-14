@@ -1,4 +1,0 @@
-interface:
-  display_name: "Swarm Subagents"
-  short_description: "Run parallel native Codex subagents"
-  default_prompt: "Use $swarm-sub to review independent parts of this change."

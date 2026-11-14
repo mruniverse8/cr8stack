@@ -4,9 +4,6 @@ description: "Apply when you catch yourself writing the same instruction a secon
 disable-model-invocation: true
 ---
 
-> **Codex only:** Read [the local runtime adapter](../poteto-mode/references/local-codex-compatibility.md) before following this Cursor-authored workflow. Cursor follows the instructions below unchanged.
-
-
 # Encode Lessons in Structure
 
 If the lesson needs judgment and cannot be encoded, make the instruction more prominent and add an example of the failure mode.

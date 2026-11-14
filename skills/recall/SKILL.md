@@ -4,18 +4,7 @@ description: "Reconstruct your recent working context from your own chat history
 disable-model-invocation: true
 ---
 
-> **Codex only:** Read [the local runtime adapter](../poteto-mode/references/local-codex-compatibility.md) before following this Cursor-authored workflow. Cursor follows the instructions below unchanged.
-
-
 # Recall
-
-## Codex execution
-
-Before mining history, look for in-scope saved efforts under the active project's `.pstack/runs/`. A named run ID or registry path routes directly to [Session pickup](../poteto-mode/playbooks/session-pickup.md), not broad transcript mining. Use [swarm-check](../swarm-check/SKILL.md) to refresh that run's cloud observations and include paused scheduling, ready dependencies, active workers, and retrieved results in the capsule. Checking does not resume or submit.
-
-Use the actual Codex session/transcript facilities exposed by the host, not the Cursor transcript path below. Keep searches within the user's named scope. A durable run ID identifies the effort across sessions; a transcript identifies one coordinator conversation.
-
-## Cursor workflow and shared task phases
 
 **Before you start or resume work, you rebuild the user's recent working context and hand back a tight capsule of where things stand now and what to do next.**
 
